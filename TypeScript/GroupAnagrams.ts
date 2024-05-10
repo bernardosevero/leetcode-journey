@@ -2,8 +2,8 @@
 // https://leetcode.com/problems/group-anagrams/
 // 49. Group Anagrams
 
-// time complexity: O(n)
-// space complexity: O(m*n)
+// time complexity: O(m*n)
+// space complexity: O(n)
 
 function groupAnagrams(strs: string[]): string[][] {
     const anagrams = new Map<string, string[]>()
@@ -16,7 +16,6 @@ function groupAnagrams(strs: string[]): string[][] {
         }
         anagrams.set(counter.toString(), [...anagrams.get(counter.toString()) || [], strs[i]])
     }
-
 
     return Array.from(anagrams.values())
 };
