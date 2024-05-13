@@ -4,6 +4,7 @@
 
 // time: O(n)
 // space: O(1) - considering the `result` does not change de space complexity
+// rules: 1. cant use / operator 2. must be O(n)
 
 function productExceptSelf(nums: number[]): number[] {
     const result = Array.from({length: nums.length}, () => 1)
